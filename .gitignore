@@ -1,0 +1,8 @@
+bin
+lib/ultimatealpr_assets/**
+lib/windows_amd64/opencv4/**
+lib/windows_amd64/ultimatealpr/**
+lib/linux_amd64/ultimatealpr/**
+lib/linux_arm64/ultimatealpr/**
+src/org/doubango/ultimateAlpr/Sdk/**
+src/org/json/**

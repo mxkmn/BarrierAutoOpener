@@ -1,0 +1,37 @@
+MJPEG http://15.15.15.63/video.cgi mxkmn mxkmnpas
+E588YB17* X584KP9*
+
+
+
+En:
+
+All lines except the first two will be ignored.
+In the first line you must specify the type of connection to the camera and additional data, in the second line you must list the desired license plate numbers.
+
+For local cameras (e.g. webcams) enter `LOCAL`. The first camera in the system will be selected.
+For IP cameras with RTSP connection enter `RTSP uri`, where uri is the link to the camera (e.g. rtsp://15.15.15.63:554/play1.sdp)
+For IP cameras that connect via RTSP with identification, use uri with the data `login:password@` (e.g. rtsp://demo:demo@ipvmdemo.dyndns.org:5541/onvif-media/media.amp?profile=profile_1_h264&sessiontimeout=60&streamtype=unicast)
+For IP cameras with an HTTP connection with MJPEG stream enter `MJPEG uri`, where uri is the link to the camera (e.g. http://15.15.15.63/video.cgi)
+For IP cameras with an HTTP connection and authentication, enter `MJPEG uri login password`
+
+To improve the performance of the system, a pause of 200 ms occurs after each processed frame. If necessary, it can be removed (App.java file).
+
+You can also enable or disable the DEBUG option to display the image window. Find it in the CameraConnection.java file.
+
+
+
+
+Ru:
+
+Все строки, кроме первых двух, будут игнорироваться
+В первой строке вы должны указать тип подключения к камере и дополнительные данные, во второй вы должны перечислить нужные номера автомобилей.
+
+Для локальных камер (например вебкамер) введите `LOCAL`. Будет выбрана первая камера в системе.
+Для IP-камер с подключением по RSTP введите `RTSP uri`, где uri - ссылка к камере (например rtsp://15.15.15.63:554/play1.sdp)
+Для IP-камер с подключением по RSTP c идентификацией используйте uri с данными `login:password@` (например rtsp://demo:demo@ipvmdemo.dyndns.org:5541/onvif-media/media.amp?profile=profile_1_h264&sessiontimeout=60&streamtype=unicast)
+Для IP-камер с подключением по HTTP с MJPEG-стримом введите `MJPEG uri`, где uri - ссылка к камере (например http://15.15.15.63/video.cgi)
+Для IP-камер с подключением по HTTP и идентификацией введите `MJPEG uri login password`
+
+Для снижения нагрузки после каждого обработанного кадра происходит задержка в 200 мс. При необходимости её можно убрать (файл App.java).
+
+Также вы можете включить или отключить опцию DEBUG для отображения окна с изображением. Найдите её в файле CameraConnection.java.

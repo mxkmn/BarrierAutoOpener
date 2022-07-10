@@ -1,0 +1,8 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/windows_amd64/opencv4/*.jar", // windows
+        "/usr/share/java/opencv4/*.jar" // linux (you may need to change the path)
+    ]
+}

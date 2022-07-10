@@ -1,0 +1,26 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "java",
+			"name": "Windows (amd64): launch app",
+			"request": "launch",
+			"mainClass": "App",
+			"vmArgs": "-Djava.library.path=\"lib/windows_amd64/opencv4;${env:PATH};\" --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED" // don't forget to add the path of ultimatealpr to the PATH environment variable
+		},
+		{
+			"type": "java",
+			"name": "Debian 11 (amd64): launch app",
+			"request": "launch",
+			"mainClass": "App",
+			"vmArgs": "-Djava.library.path=\"lib/linux_amd64/ultimatealpr:/usr/lib/jni:/usr/lib/x86_64-linux-gnu\" --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED"
+		},
+		{
+			"type": "java",
+			"name": "Raspberry Pi OS (arm64): launch app",
+			"request": "launch",
+			"mainClass": "App",
+			"vmArgs": "-Djava.library.path=\"lib/linux_arm64/ultimatealpr:/usr/lib/jni:/usr/lib/x86_64-linux-gnu\" --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED"
+		}
+	]
+}
